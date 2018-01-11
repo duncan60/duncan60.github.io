@@ -16,17 +16,24 @@
     <meta property="og:url" content="http://www.checkme.tw/resume/" />
     <meta property="og:image" content="" />
 
-    <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,400italic,300italic,500,500italic' rel='stylesheet' type='text/css'>
-    <link href="css/normalize.css" rel="stylesheet" />
-    <link href="css/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,400italic,300italic,500,500italic' type='text/css'>
+    <link rel="stylesheet" href="css/normalize.css" type='text/css' />
+    <link rel="stylesheet" href="css/style.css" type='text/css' />
 
     <!--[if gte IE 9]><!-->
-    <link href="css/responsive.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/responsive.css" type='text/css' />
     <!--<![endif]-->
     <!--[if lt IE 9]>
-        <script src="js/libs/html5.js"></script>
-        <script src="js/libs/IE9.js" ></script>
+        <script src="//cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <!--[if lt IE 9]>
+            <script src="//code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+        <![endif]-->
+    <!--[if gte IE 9]><!-->
+    <script rel="preload" src="//code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous" as="script"></script>
+    <!--<![endif]-->
+    <script rel="preload" src="js/app.min.js" as="script"></script>
     <script>
         (function(i, s, o, g, r, a, m) {
             i['GoogleAnalyticsObject'] = r;
@@ -449,13 +456,7 @@
             <a href="mailto:tmduncan60@gmail.com"><span>tmduncan60@gmail.com</span></a>
         </p>
     </footer>
-    <!--[if lt IE 9]>
-            <script src="//code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
-        <![endif]-->
-    <!--[if gte IE 9]><!-->
-    <script src="//code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-    <!--<![endif]-->
-    <script src="js/app.min.js"></script>
+    <script type="text/javascript" src="js/app.min.js" defer></script>
     <script>
         // Register the service worker
         if ('serviceWorker' in navigator) {
