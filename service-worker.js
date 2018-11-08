@@ -1,4 +1,4 @@
-var cacheName = 'latestResume-2018-v2';
+var cacheName = 'latestResume-2018-v3';
 
 // Cache our known resources during install
 self.addEventListener('install', event => {
